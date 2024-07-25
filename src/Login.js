@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import InstagramLogin from 'react-instagram-login';
 
 
@@ -25,6 +26,9 @@ const Login = () => {
       <button style={styles.button} onClick={handleLogin}>
         Login with Instagram
       </button>
+      <Link to={'/auth/callback'}>
+       auth
+      </Link>
     </div>
   );
 };
