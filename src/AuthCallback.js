@@ -11,7 +11,7 @@ const AuthCallback = () => {
   
       if (code) {
         axios
-          .post('http://13.201.29.22/auth/instagram/exchange', { code })
+          .post('https://zocial-api-master.onrender.com/auth/instagram/exchange', { code })
           .then((response) => {
             console.log('Access Token:', response.data.accessToken);
             console.log('Instagram User:', response.data.instagramUser);
